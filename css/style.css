@@ -25,10 +25,19 @@ body {
   font-size: 12px;
 }
 
+/* HEADER */
 header {
   background: linear-gradient(to right, rgba(30,115,255,1), rgba(25,97,255,1));
-  color: #fff;
   font-family: 'Roboto', sans-serif;
+}
+
+header .left-side a:hover {
+  text-decoration: none;
+}
+
+header .logo {
+  margin-bottom: 30px;
+  position: relative;
 }
 
 header .img-logo {
@@ -37,23 +46,20 @@ header .img-logo {
   padding-right: 20px;
 }
 
-header .logo {
-  float: left;
-  margin-bottom: 30px;
-}
-
 header h1 {
   font-size: 56px;
   margin: 10px 0 0 0;
+  color: #fff;
 }
 
 header h1 span {
   color: #82da40;
 }
 
-header .slogan {
+header .logo .slogan {
   text-align: right;
   margin-top: -15px;
+  width: 500px;
 }
 
 header .slogan li {
@@ -74,7 +80,6 @@ header .slogan li:first-child:before {
   margin-right: 0;
 }
 
-/*Ezt feltétlen ellenőrizni!!!*/
 header .right-side {
   text-align: right;
 }
@@ -82,21 +87,55 @@ header .right-side {
 header .login {
   margin-top: 15px;
   margin-bottom: 15px;
+  color: #fff;
+  font-size: 16px;
 }
 
 header .login li {
   display: inline;
+}
 
+header .login li:before {
+  content: '\007C';
+  margin-right: 5px;
+}
+
+header .login li:first-child:before {
+  content: '';
+  margin-left: 0;
+  margin-right: 0;
 }
 
 header .login a {
   color: #fff;
   font-weight: 300;
-  font-size: 16px;
+}
+
+header .other_buttons {
+  margin-top: 20px;
+}
+
+header .kiemelt {
+  background-color: #ff7072;
+  border: 1px solid #ff7072;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+header .tovabbi {
+  background-color: rgba(0,0,0,.0);
+  color: #a4ff00;
+  border: 1px solid #a4ff00;
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-size: 18px;
 }
 
 header nav {
-  background-color: #1860d6;
+  background-color: rgba(0,0,0,.16);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
@@ -107,7 +146,7 @@ header nav a {
   font-size: 18px;
   text-transform: uppercase;
   display: inline-block;
-  padding: 20px 15px;
+  padding: 15px 15px;
   margin-left: 80px;
 }
 
@@ -116,3 +155,69 @@ header nav a:hover {
   color: #1961ff;
   text-decoration: none;
 }
+
+/* HEADER END*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+.footer {
+  background-color: #1d71ff;
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.footer_inner {
+  list-style-type: none;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer_inner li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer_inner li.firm::before {
+  content: '\00A9';
+  margin-right: 7px;
+}
+
+.footer_inner li.address::before {
+  content: '\f041';
+  font-family: "FontAwesome";
+  color: #a4ff00;
+  margin-right: 7px;
+}
+
+.footer_inner li.mail::before {
+  content: '\f0e0';
+  font-family: "FontAwesome";
+  color: #a4ff00;
+  margin-right: 7px;
+}
+
+.footer_inner li a {
+  color: #fff;
+}
+
+.footer_inner li a:hover {
+  color: #a4ff00;
+  text-decoration: none;
+}
+
+
+
+/* FOOTER END */
