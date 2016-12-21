@@ -26,36 +26,36 @@ body {
 }
 
 /* HEADER */
-header {
+.header {
   background: linear-gradient(to right, rgba(30,115,255,1), rgba(25,97,255,1));
   font-family: 'Roboto', sans-serif;
 }
 
-header .left-side a:hover {
+.header .left-side a:hover {
   text-decoration: none;
 }
 
-header .logo {
-  margin-bottom: 30px;
+.header .logo {
+  margin-bottom: 15px;
 }
 
-header .img-logo {
+.header .img-logo {
   float: left;
   margin-top: 20px;
-  padding-right: 20px;
+  padding-right: 10px;
 }
 
-header h1 {
+.header h1 {
   font-size: 56px;
   margin: 10px 0 0 0;
   color: #fff;
 }
 
-header h1 span {
+.header h1 span {
   color: #82da40;
 }
 
-header .logo .slogan {
+.header .logo .slogan {
   text-align: right;
   width: 270px;
   position: relative;
@@ -64,60 +64,61 @@ header .logo .slogan {
   right: -140px;
 }
 
-header .slogan li {
+.header .slogan li {
  display: inline;
  color: rgba(255,255,255,0.5);
  font-size: 18px;
 }
 
-header .slogan li:before {
+.header .slogan li:before {
   content: '\2022';
   margin-left: 7px;
   margin-right: 7px;
 }
 
-header .slogan li:first-child:before {
+.header .slogan li:first-child:before {
   content: '';
   margin-left: 0;
   margin-right: 0;
 }
 
-header .right-side {
+.header .right-side {
   text-align: right;
 }
 
-header .login {
+.header .login {
   margin-top: 15px;
   margin-bottom: 15px;
   color: #fff;
   font-size: 16px;
 }
 
-header .login li {
+.header .login li {
   display: inline;
 }
 
-header .login li:before {
+.header .login li:before {
   content: '\007C';
   margin-right: 5px;
 }
 
-header .login li:first-child:before {
+.header .login li:first-child:before {
   content: '';
   margin-left: 0;
   margin-right: 0;
 }
 
-header .login a {
+.header .login a {
   color: #fff;
   font-weight: 300;
 }
 
-header .other_buttons {
+.header .other_buttons {
   margin-top: 20px;
+  font-weight: 700;
 }
 
-header .kiemelt {
+.header .kiemelt {
   background-color: #ff7072;
   border: 1px solid #ff7072;
   color: #fff;
@@ -127,7 +128,7 @@ header .kiemelt {
   margin-right: 10px;
 }
 
-header .tovabbi {
+.header .tovabbi {
   background-color: rgba(0,0,0,.0);
   color: #a4ff00;
   border: 1px solid #a4ff00;
@@ -136,13 +137,15 @@ header .tovabbi {
   font-size: 18px;
 }
 
-header nav {
+.header nav {
   background-color: rgba(0,0,0,.16);
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
-header nav a {
+.header nav a {
   color: #fff;
   font-weight: 700;
   font-size: 18px;
@@ -152,7 +155,7 @@ header nav a {
   margin-left: 80px;
 }
 
-header nav a:hover {
+.header nav a:hover {
   background-color: rgba(255,255,255,0.6);
   color: #1961ff;
   text-decoration: none;
@@ -160,12 +163,75 @@ header nav a:hover {
 
 /* HEADER END*/
 
+section.extra {
+  background-color: #f1a8a9;
+}
 
+.extra h1 {
+  color: #fff;
+  text-align: center;
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+}
 
+section #box-extra {
+  background-color: #fff;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
 
+section #box-extra .header-extra {
+  background-color: #d12e12;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 2px solid #fff;
+  text-align: left;
+  color: #fff;
+}
 
+section #box-extra .header-extra .data {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+}
 
+section #box-extra .header-extra .data li {
+  display: inline;
+  font-size: 14px;
+  font-weight: 700;
+}
 
+section #box-extra .header-extra .data li:before {
+  content: '\2022';
+  margin-left: 7px;
+  margin-right: 7px;
+}
+
+section #box-extra .header-extra .data li:first-child:before {
+  content: '';
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#box-extra button.btn-extra {
+  background-color: #fff;
+  border: 1px solid #d12e12;
+  color: #d12e12;
+  padding: 6px 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#box-extra button.btn-extra:hover {
+  background-color: #d12e12;
+  border: 1px solid #d12e12;
+  color: #fff;
+}
 
 
 
@@ -173,7 +239,7 @@ header nav a:hover {
 
 
 /* FOOTER */
-.footer {
+footer {
   background-color: #1d71ff;
   color: #fff;
   font-weight: 700;
