@@ -37,7 +37,6 @@ header .left-side a:hover {
 
 header .logo {
   margin-bottom: 30px;
-  position: relative;
 }
 
 header .img-logo {
@@ -58,8 +57,11 @@ header h1 span {
 
 header .logo .slogan {
   text-align: right;
-  margin-top: -15px;
-  width: 500px;
+  width: 270px;
+  position: relative;
+  display: inline-block;
+  top: -15px;
+  right: -140px;
 }
 
 header .slogan li {
