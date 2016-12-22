@@ -36,18 +36,28 @@ body {
 }
 
 .header .logo {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .header .img-logo {
+  background-image: url(../images/level.png);
+  display: block;
+  width: 70px;
+  height: 77px;
+  margin-top: 20px;
+  background-repeat: no-repeat;
+}
+
+/*.header .img-logo { Előző verzió
   float: left;
   margin-top: 20px;
   padding-right: 10px;
-}
+}*/
 
 .header h1 {
   font-size: 56px;
-  margin: 10px 0 0 0;
+  margin: 15px 0 0 0;
+  padding: 0 0 0 80px;
   color: #fff;
 }
 
@@ -61,7 +71,7 @@ body {
   position: relative;
   display: inline-block;
   top: -15px;
-  right: -140px;
+  right: -215px;
 }
 
 .header .slogan li {
