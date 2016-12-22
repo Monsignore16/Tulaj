@@ -35,10 +35,6 @@ body {
   text-decoration: none;
 }
 
-.header .logo {
-  margin-bottom: 30px;
-}
-
 .header .img-logo {
   background-image: url(../images/level.png);
   display: block;
@@ -153,6 +149,7 @@ body {
   border-top-right-radius: 10px;
   margin-left: 15px;
   margin-right: 15px;
+  margin-top: 30px;
 }
 
 .header nav a {
@@ -185,14 +182,15 @@ section.extra {
   text-transform: uppercase;
 }
 
-section #box-extra {
+section .box-extra,
+section .box {
   background-color: #fff;
   border-radius: 10px;
   margin-bottom: 30px;
   text-align: center;
 }
 
-section #box-extra .header-extra {
+section .box-extra .header-extra {
   background-color: #d12e12;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -201,31 +199,50 @@ section #box-extra .header-extra {
   color: #fff;
 }
 
-section #box-extra .header-extra .data {
+section .box .header-box-base {
+  background-color: #707070;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom: 2px solid #fff;
+  text-align: left;
+  color: #fff;
+}
+
+section .box-extra .header-extra .data,
+section .box .header-box-base .data {
   list-style-type: none;
   margin: 0;
   padding: 10px;
 }
 
-section #box-extra .header-extra .data li {
+section .box-extra .header-extra .data li {
   display: inline;
   font-size: 14px;
   font-weight: 700;
 }
 
-section #box-extra .header-extra .data li:before {
+section .box .header-box-base .data li {
+  display: inline;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+section .box-extra .header-extra .data li:before,
+section .box .header-box-base .data li:before {
   content: '\2022';
   margin-left: 7px;
   margin-right: 7px;
 }
 
-section #box-extra .header-extra .data li:first-child:before {
+section .box-extra .header-extra .data li:first-child:before,
+section .box .header-box-base .data li:first-child:before {
   content: '';
   margin-left: 0;
   margin-right: 0;
 }
 
-#box-extra button.btn-extra {
+.box-extra button.btn-extra,
+.box button.btn-box-base {
   background-color: #fff;
   border: 1px solid #d12e12;
   color: #d12e12;
@@ -237,14 +254,35 @@ section #box-extra .header-extra .data li:first-child:before {
   margin-bottom: 15px;
 }
 
-#box-extra button.btn-extra:hover {
+.box-extra button.btn-extra:hover,
+.box button.btn-box-base:hover {
   background-color: #d12e12;
   border: 1px solid #d12e12;
   color: #fff;
 }
 
+section.database-title {
+  background-color: #1d71ff;
+  margin-bottom: 30px;
+}
 
+section.database-title h1 {
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+}
 
+section.database-title .blue-triangle::after {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 9px 9px 0 9px;
+  border-color: #1d71ff transparent transparent transparent;
+  position: absolute;
+  left: 50%;
+}
 
 
 
