@@ -36,7 +36,7 @@ body {
 }
 
 .header .img-logo {
-  background-image: url(../images/level.png);
+  background-image: url(../images/level.svg);
   display: block;
   width: 70px;
   height: 77px;
@@ -208,6 +208,10 @@ section .box .header-box-base {
   color: #fff;
 }
 
+section .box .colorful {
+  background-color: #d12e12;
+}
+
 section .box-extra .header-extra .data,
 section .box .header-box-base .data {
   list-style-type: none;
@@ -261,6 +265,38 @@ section .box .header-box-base .data li:first-child:before {
   color: #fff;
 }
 
+section .box .details {
+  list-style-type: none;
+  margin-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  line-height: 23px
+}
+
+.box .details li {
+  border-bottom: 1px solid #dbdbdb;
+  clear: both;
+}
+
+.box .details li .left {
+  float: left;
+}
+
+.box .details li .right {
+  display: inline;
+  float: right;
+  font-weight: 700;
+}
+
+.box .details li .price {
+  font-size: 16px;
+  color: #d12e12;
+}
+
+.box .details li .no-data {
+  color: #bdbdbd;
+}
+
 section.database-title {
   background-color: #1d71ff;
   margin-bottom: 30px;
@@ -283,8 +319,6 @@ section.database-title .blue-triangle::after {
   position: absolute;
   left: 50%;
 }
-
-
 
 /* FOOTER */
 footer {
