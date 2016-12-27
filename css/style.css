@@ -275,17 +275,24 @@ section .box .details {
 
 .box .details li {
   border-bottom: 1px solid #dbdbdb;
-  clear: both;
 }
 
-.box .details li .left {
-  float: left;
+.box .details li .details-row {
+  padding-left: 75px;
+  position: relative;
+  text-align: right;
 }
 
-.box .details li .right {
-  display: inline;
-  float: right;
+.box .details li .details-row .left {
+  position: absolute;
+  left: 2px;
+  top: 0;
+  display: block;
+}
+
+.box .details li .details-row .right {
   font-weight: 700;
+  padding-right: 2px;
 }
 
 .box .details li .price {
